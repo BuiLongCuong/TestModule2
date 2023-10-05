@@ -9,7 +9,7 @@ public class ReadAndWriteFile {
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
             String line = "";
             for (Product product : list) {
-                line += product.getId() + ", " + product.getName() + ", " + product.getQuantity() + ", " + product.getPrice() + ", " + product.getTypeOfProduct() + "\n";
+                line += product.getId() + "," + product.getName() + "," + product.getQuantity() + "," + product.getPrice() + "," + product.getTypeOfProduct() + "\n";
             }
             bufferedWriter.write(line);
             bufferedWriter.close();
@@ -26,7 +26,7 @@ public class ReadAndWriteFile {
             String line;
             while ((line = bufferedReader.readLine()) != null) {
                 String[] data = line.split(",");
-                Product product = new Product(data[0], Integer.parseInt(data[1]), Integer.parseInt(data[2]), data[3]);
+                Product product = new Product(data[1], Integer.parseInt(data[2]), Integer.parseInt(data[3]), data[4]);
                 list.add(product);
             }
             bufferedReader.close();

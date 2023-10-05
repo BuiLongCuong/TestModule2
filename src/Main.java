@@ -5,11 +5,11 @@ public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         ProductManager productManager = new ProductManager();
-        productManager.add(new Product("cà phê", 50, 25000, "Tốt"));
-        productManager.add(new Product("trà đá", 100, 5000, "Tốt"));
-        productManager.add(new Product("trà đào", 90, 20000, "Tốt"));
-        productManager.add(new Product("bạc sỉu", 70, 20000, "Tốt"));
-        productManager.add(new Product("trà tắc", 100, 10000, "Tốt"));
+//        productManager.add(new Product("cà phê", 50, 25000, "Tốt"));
+//        productManager.add(new Product("trà đá", 100, 5000, "Tốt"));
+//        productManager.add(new Product("trà đào", 90, 20000, "Tốt"));
+//        productManager.add(new Product("bạc sỉu", 70, 20000, "Tốt"));
+//        productManager.add(new Product("trà tắc", 100, 10000, "Tốt"));
         productManager.showAll();
         int choice;
         do {
