@@ -36,9 +36,11 @@ public class ProductManager {
                     product.setTypeOfProduct(typeOfProduct);
                 }
             }
+        readAndWriteFile.writeFile(list);
     }
     public void delete(int id){
         list.remove(id-1);
+        readAndWriteFile.writeFile(list);
     }
     public Product findProductById(int id){
         for (Product product : list) {
