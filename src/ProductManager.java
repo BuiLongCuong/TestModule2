@@ -60,30 +60,30 @@ public class ProductManager {
         return listSearch;
     }
     public ArrayList<Product> listGoodProducts(){
-        ArrayList<Product> list = new ArrayList<>();
+        ArrayList<Product> list1 = new ArrayList<>();
         for (Product product : list) {
-            if(product.getName() == "Tốt"){
-                list.add(product);
+            if(product.getTypeOfProduct().equals("Tốt")){
+                list1.add(product);
             }
         }
-        return list;
+        return list1;
     }
     public ArrayList<Product> listMediumProducts(){
-        ArrayList<Product> list = new ArrayList<>();
+        ArrayList<Product> list2 = new ArrayList<>();
         for (Product product : list) {
-            if(product.getName() == "Trung bình"){
-                list.add(product);
+            if(product.getTypeOfProduct().equals("Trung bình")){
+                list2.add(product);
             }
         }
-        return list;
+        return list2;
     }
     public ArrayList<Product> listBadProducts(){
-        ArrayList<Product> list = new ArrayList<>();
+        ArrayList<Product> list3 = new ArrayList<>();
         for (Product product : list) {
-            if(product.getName() == "Kém"){
-                list.add(product);
+            if(product.getTypeOfProduct().equals("Kém")){
+                list3.add(product);
             }
         }
-        return list;
+        return list3;
     }
 }
