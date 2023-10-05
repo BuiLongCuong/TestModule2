@@ -6,7 +6,7 @@ public class ProductManager {
 
     public ProductManager() {
         readAndWriteFile = new ReadAndWriteFile();
-//        this.list = readAndWriteFile.readFile();
+        this.list = readAndWriteFile.readFile();
     }
 
     public void add(Product newProduct){

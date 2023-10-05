@@ -10,9 +10,9 @@ public class ReadAndWriteFile {
             String line = "";
             for (Product product : list) {
                 line += product.getId() + ", " + product.getName() + ", " + product.getQuantity() + ", " + product.getPrice() + ", " + product.getTypeOfProduct() + "\n";
-                bufferedWriter.write(line);
-                bufferedWriter.close();
             }
+            bufferedWriter.write(line);
+            bufferedWriter.close();
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
